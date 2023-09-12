@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  padding: 100px 0;
+  background-color: rgba(41, 86, 235, 0.05);
+}
+footer {
+  background-color: rgba(41, 86, 235, 0.05);
+  padding: 20px 0;
+}
+h1 {
+  font-weight: 300;
+  font-size: clamp(2rem, 2rem + 1vw, 4rem);
+}
+h2 {
+  font-weight: 300;
+  font-size: clamp(1.2rem, 1.5rem + 1vw, 2.5rem);
+}
+main {
+  min-height: 90vh;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section + section {
+  margin: 30px;
+}
+nav {
+  margin: 30px 0;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 0.6em 2em;
+  background-color: rgb(41, 86, 235);
+  color: #fefefe;
+  text-decoration: none;
+}
+a:hover {
+  filter: brightness(1.2);
+}
+
+/* --------------------------------------create-dossier------------------------------------ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  /* border-radius: 0; */
+  border: 1px solid rgb(105, 108, 120);
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 0.5em 2em;
+}
+
+.created-dossiers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.created-dossiers.show {
+  margin: 30px 0;
+  padding: 30px 0;
+  border-top: 2px solid rgb(105, 108, 120);
+  border-bottom: 2px solid rgb(105, 108, 120);
+}
+.dossier {
+  padding: 20px;
+  background-color: rgba(41, 86, 235, 0.05);
+}
+.dossier > div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+}
+.dossier > div + div {
+  margin-top: 10px;
+}
+/* ---------------------------------------track-progress----------------------------------- */
+
+/* -------------------------------------------------------------------------- */

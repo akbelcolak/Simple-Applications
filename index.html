@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dossier Tracking System</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>Dossier Tracking System</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="wrap">
+            <ul>
+                <li><a href="#create-dossier">Create Dossier</a></li>
+                <li><a href="#track-progress">Track Progress</a></li>
+                <li><a href="#search-retrieve">Search & Retrieve</a></li>
+                <li><a href="#collaborate">Collaborate</a></li>
+                <li><a href="#generate-reports">Generate Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="wrap">
+
+
+            <section id="create-dossier">
+                <!-- Create Dossier Form -->
+                <!-- Use HTML form elements to capture applicant's details, permit type, and submission date -->
+                <h2>Create Dossier</h2>
+                <form id="dossier-form">
+                    <div class="form-group">
+                        <label for="applicant-name">Applicant's Name:</label>
+                        <input type="text" id="applicant-name" name="applicantName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="permit-type">Permit Type:</label>
+                        <select id="permit-type" name="permitType" required>
+                            <option value="Building">Building Permit</option>
+                            <option value="Environmental">Environmental Permit</option>
+                            <option value="Business">Business Permit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="submission-date">Submission Date:</label>
+                        <input type="date" id="submission-date" name="submissionDate" required>
+                    </div>
+                    <div class="form-group">
+                        <!-- File Upload for Documents (if needed) -->
+                        <label for="document-upload">Upload Documents:</label>
+                        <input type="file" id="document-upload" name="documents" multiple>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" id="dossier-form-submit">Submit Dossier</button>
+                    </div>
+                </form>
+
+                <div class="created-dossiers">
+
+                </div>
+
+            </section>
+
+            <section id="track-progress">
+                <!-- Dashboard to display dossier status -->
+                <!-- Use JavaScript/jQuery to dynamically update and display the status of dossiers -->
+            </section>
+
+            <section id="search-retrieve">
+                <!-- Search and Retrieve Dossiers -->
+                <!-- Implement search functionality using JavaScript/jQuery -->
+            </section>
+
+            <section id="collaborate">
+                <!-- Collaboration features -->
+                <!-- Implement a commenting system and dossier status updates -->
+            </section>
+
+            <section id="generate-reports">
+                <!-- Generate Reports -->
+                <!-- Create a report generation interface -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <p>@kbel &copy; 2023 Dossier Tracking System</p>
+        </div>
+    </footer>
+
+    <!-- @*JQUERY*@ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- @*JQUERY UI*@ -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
